@@ -1,0 +1,18 @@
+<h1 class="header" data-bind="header"></h1>
+
+<div class="list">
+	<div data-foreach-change="changes" class="wrapper">
+		<div class="left">
+			<img class="submitter-avatar" data-bind-src="change.submitterAvatarUrl" alt="Submitter Avatar" src="">
+			<div class="submitter" data-bind="change.submitter"></div>
+		</div>
+		<div class="right">
+			<div class="change-subject" data-bind="change.subject"></div>
+			<div class="change-project" data-bind="change.project"></div>
+			<div class="change-branch" data-bind="change.branch"></div>
+		</div>
+		<div style="clear: both; padding-bottom: 1vh;"></div>
+	</div>
+</div>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
